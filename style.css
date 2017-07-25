@@ -1,0 +1,44 @@
+.container {
+   font-size: 16px;
+   font-style: italic;
+   margin:0px;
+   padding: 66px;
+   /*background-color: red;*/
+   text-align: center;
+}
+.hero{
+    height: 400px;
+    background: url("file:///Users/breckontrischuk/Documents/final-project-assets/images/kayak-bkgd.jpg") fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:
+}
+body{
+    color:#2d2d2d;
+}
+
+.h2{
+    color:#646464;
+}
+
+a:hover{
+    color: #e2574c;
+}
+
+.navigation li a{
+    color:white;
+}
+
+section h4{
+    font-size: 20px;
+}
+
+background-img{
+    max width:100%;
+}
+.container{
+    width: 1140px;
+}
+footer{
+    text-align:left;
+}
