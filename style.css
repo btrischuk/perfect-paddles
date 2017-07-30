@@ -1,32 +1,106 @@
-.container {
-   font-size: 16px;
-   font-style: italic;
-   margin:0px;
-   padding: 66px;
-   /*background-color: red;*/
-   text-align: center;
-}
-.hero{
-    height: 400px;
-    background: url("file:///Users/breckontrischuk/Documents/final-project-assets/images/kayak-bkgd.jpg") fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:
-}
+
+
 body{
-    color:#2d2d2d;
+    background-color:white;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 1.25em;
+    box-sizing: border-box;
+    color: #2d2d2d;
+}
+.logo{
+    align-content:left;
+    min-width:1500px;
+    max-height:20px;
+    color:red;
+    background-color: black;
+    padding: 10px;
+    background-image: 20px;
 }
 
+nav ul li {
+    text-align:right;
+    display:inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    list-style-type: none;
+    padding:10px 5px;
+    margin:0 auto;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+nav ul{
+    text-align: right;
+    color:blue;
+}
+
+nav {
+    background-color:black;
+    text-transform:uppercase;
+    margin-bottom:0px;
+    border-top:15px;
+}
+
+.hero {
+    background: url("file:///Users/breckontrischuk/Documents/final-project-assets/images/kayak-bkgd.jpg");
+    color:white;
+    background-size:cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align:center;
+    position:relative;
+    min-width:1140px;
+    max-width: 1140px;
+    max-height:500px;
+    min-height: 300px;
+    padding-top:80px;
+    margin: 110px;
+    
+
+    }
+
+button {
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius:50px;
+    box-shadow: 2px 5px 10px black;
+}
+
+ .container {
+   font-size: 16px;
+   font-style: italic;
+   margin:auto;
+   padding: 66px;
+   text-align: center;
+   width: 1140px;
+   background-color:white;
+}
+
+section{
+    text-align:center;
+}
 .h2{
     color:#646464;
 }
 
-a:hover{
+a {
     color: #e2574c;
+    
 }
 
-.navigation li a{
-    color:white;
+a:hover{
+    color:blue;
+}
+
+/*
+ul  {
+    display:inline;
+    padding:8px;
+    text-align:right;
+    color: white;*/
 }
 
 section h4{
@@ -34,11 +108,9 @@ section h4{
 }
 
 background-img{
-    max width:100%;
+    min-width: 500px;
 }
-.container{
-    width: 1140px;
-}
+
 footer{
     text-align:left;
 }
