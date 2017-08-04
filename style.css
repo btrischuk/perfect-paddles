@@ -8,7 +8,8 @@ body{
     box-sizing: border-box;
     color: #2d2d2d;
 }
-.logo{
+
+.navigation{
     /*position: absolute;*/
     align-content:left;
     min-width:1500px;
@@ -19,7 +20,11 @@ body{
     background:black;
 }
 
-.logo nav ul {
+.navigation nav{
+text-align: right;
+}
+
+.navigation ul {
     text-align:right;
     font-size: 12px;
     font-weight: bold;
@@ -29,19 +34,15 @@ body{
     text-transform: uppercase;
     background-color: black;
     list-style: none;
-    /*min-width: 1500px;
-    max-height: 20px;*/
-    /*position: fixed;*/
 }
 
-.logo nav ul li {
-    display: inline;
+.navigation img{
+    text-align:left;
 }
 
-/*nav ul{
+.navigation a{
     text-align: right;
-    color:blue;
-}*/
+}
 
 .hero {
     background: url("file:///Users/breckontrischuk/Documents/final-project-assets/images/kayak-bkgd.jpg");
@@ -87,7 +88,6 @@ button {
     flex-direction: column;
 }
 
-
 section{
     text-align:center;
 }
@@ -97,27 +97,14 @@ section{
 
 a {
     color: #e2574c;
-    
 }
 
 a:hover{
     color:blue;
 }
 
-
-/*ul  {
-    display:inline;
-    padding:8px;
-    text-align:right;
-    color: white;
-}*/
-
 section h4{
     font-size: 20px;
-}
-
-background-img{
-    min-width: 500px;
 }
 
 footer{
@@ -128,5 +115,5 @@ footer{
 }
 
 .social p{
-flex-direction:center;
+flex-direction:right;
 }
