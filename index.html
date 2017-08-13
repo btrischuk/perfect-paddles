@@ -3,19 +3,28 @@
 
 <head>
     <title>Perfect Paddles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="reset" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="navigation">
-        <div>
-            <img src="images/perfect-paddles-logo.svg"
-                 alt="Perfect Paddles logo"
-                 width="100">
-                <a href="">about</a>
-                <a href="">rentals</a>
-                <a href="">location</a>
+    <!--<div class="logo">
+        <background-img: url("images/perfect-paddles-logo.svg") fixed;/>
+            alt="Perfect Paddles logo"
+            width="100">
+    </div>-->
+
+    <div class="banner">
+        <img src="images/perfect-paddles-logo.svg"
+            alt="perfect Paddles Logo"
+            width="100%">
+        <div class="nav">
+            <ul>
+                <li> <a href="">about</a> </li>
+                <li> <a href="">rentals</a> </li>
+                <li> <a href="">location</a> </li>
+            </ul>
         </div>
     </div>
 
@@ -26,7 +35,13 @@
         <h4>Rent our canoes year-round, take a lesson, or join a group tour.</h4>
         <button>sign me up</button>
 
+<<<<<<< HEAD
         <background-image: url("images/kayak-bkgd.jpg") fixed;/>
+=======
+        <background-img: url("kayak-bkgd.jpg") fixed;/>
+        <background-repeat: no-repeat;/>
+        <background-position: center;/>
+>>>>>>> master
     </div>
 
     <article>
@@ -34,7 +49,7 @@
             <h2>About</h2>
             <p>Perfect Paddles Kayak Rentals Co. offers you the unique opportunity to experience the great <br> outdoors in one of our single or double kayaks. we cater to all skill levels and abilities, and offer <br> a variety of lessons and tours too.
             </p>
-        <nav>
+        <div>
             <img src="images/coffee-adventure.jpg"
             alt="coffee mug"
             width="20%">
@@ -44,49 +59,81 @@
             <img src="images/sunset-kayak.jpg"
             alt="sunset kayak"
             width="20%">
-        </nav>
+        </div>
         </section>
 
         <section class="rentals">
             <h2>Rentals</h2>
             <p>All rental prices include basic paddles, life jackets, splash <br>protection, and a safety demonstration.</p>
-            <p>Pleasea note that we required 24 hours notice for all cancellations <br>and late returns will be charged accordingly.</p>
+            <p>Please note that we required 24 hours notice for all cancellations <br>and late returns will be charged accordingly.</p>
             <p>Call 604-604-6040 to book now!</p>
-            <!--Insert table
-            pricing table
 
-            column headings: Duration, Single Kayak, Double Kayak
-            row 1: 2 hours, $35, $55
-            row 2: 1 Day, $90, $130
-            row 3: Extra Day, $45, $65
-            row 4: Season Pass, $249, $349-->
+
+            <table>
+          <thead>
+            <tr>
+              <th>Duration</th>
+              <th>Single Kayak</th>
+              <th>Double Kayak</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2 hours</td>
+              <td>$35</td>
+              <td>$55</td>
+            </tr>
+            <tr>
+              <td>1 Day</td>
+              <td>$90</td>
+              <td>$130</td>
+            </tr>
+            <tr>
+              <td>Extra Day</td>
+              <td>$45</td>
+              <td>$65</td>
+            </tr>
+            <tr>
+              <td>Season Pass</td>
+              <td>$249</td>
+              <td>$349</td>
+            </tr>
+          </tbody>
+        </table>
         </section>
 
         <section class="location">
             <h2>Location</h2>
             <p>Come visit us at our location on Cornwall Avenue and Yew street in Vancouver.</p>
-            <!--insert map-->
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.0353923682032!2d-123.15637473431077!3d49.27572657933055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867235a01f461d%3A0xa4855feea57361ac!2sKitsilano+Beach!5e0!3m2!1sen!2sca!4v1485372782614"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen>
+        </iframe>
         </section>
     </article>
 
-        <footer>
-            <p>&copy; 2017 Perfect Paddles Kayak Co.
-                <br>
-                Powered by HTML and CSS.
+    <footer>
+        <article>
+            <p>&copy; 2017 Perfect Paddles Kayak Co.<br>Powered by HTML and CSS.
             </p>
-       <p> <a href="tel:604-604-6040">604-604-6040</a>. <a href="info@perfectpaddles.com">info@perfectpaddles.com</a>.</p>
-       <p>Cornwall Avenue &amp Yew Street
-           <br>Vancouver, BC. Canada</p>
-        
-            <section class "social">
+            <p> <a href="tel:604-604-6040">604-604-6040</a>. <a href="info@perfectpaddles.com">info@perfectpaddles.com</a>.
+            </p>
+            <p>Cornwall Avenue & amp Yew Street<br>
+            Vancouver, BC. Canada
+            </p>
+        </article>
+
+        <section class="social">
             <p><a href="https://facebook.com">Facebook</a></p>
             <p><a href="https://twitter.com">Twitter</a></p>
             <p><a href="https://instagram.com">Instagram</a></p>
             <p><a href="https://pinterest.com">Pinterest</a></p>
             <p><a href="https://plus.google.com">google</a></p>
-            </p>
-            </section>
-        </footer>
+        </section>
+    </footer>
     
 
 </body>
