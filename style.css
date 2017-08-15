@@ -62,7 +62,7 @@ body{
     align-content: center;
     width: 100%;
     /*max-width:1140px;
-    min-width: 1140px;
+    min-widthdsdf: 1140px;
     margin-top: 13px;*/
 }
 
@@ -72,16 +72,15 @@ header{
     width:100%;
     background-color:black;
     text-align: center;
-    padding-top: 10px;
-
 }
+
 .banner{
     color:white;
     display: flex;
     width: 15%;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
