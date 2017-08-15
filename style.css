@@ -1,47 +1,113 @@
+@font-face {
+    font-family: 'Karla-Bold';
+    src: url('fonts/Karla-Bold.eot');
+    src: url('fonts/Karla-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Karla-Bold.woff') format('woff'),
+         url('fonts/Karla-Bold.ttf') format('truetype'),
+         url('fonts/Karla-Bold.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla-BoldItalic';
+    src: url('fonts/Karla-BoldItalic.eot');
+    src: url('fonts/Karla-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Karla-BoldItalic.woff') format('woff'),
+         url('fonts/Karla-BoldItalic.ttf') format('truetype'),
+         url('fonts/Karla-BoldItalic.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla-Italic';
+    src: url('fonts/Karla-Italic.eot');
+    src: url('fonts/Karla-Italic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Karla-Italic.woff') format('woff'),
+         url('fonts/Karla-Italic.ttf') format('truetype'),
+         url('ont/Karla-Italic.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla-Regular';
+    src: url('fonts/Karla-Regular.eot');
+    src: url('fonts/Karla-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Karla-Regular.woff') format('woff'),
+         url('fonts/Karla-Regular.ttf') format('truetype'),
+         url('fonts/Karla-Regular.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico.eot');
+    src: url('fonts/Pacifico.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Pacifico.woff') format('woff'),
+         url('fonts/Pacifico.ttf') format('truetype'),
+         url('fonts/Pacifico.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     background-color:white;
-    font-family: arial;
     font-size: 16px;
     line-height: 1.25em;
     box-sizing: border-box;
     color: #2d2d2d;
-    max-width:1140px;
+    align-content: center;
+    width: 100%;
+    /*max-width:1140px;
     min-width: 1140px;
-    margin-top: 13px;
+    margin-top: 13px;*/
 }
 
+header{
+    position:fixed;
+    top:0px;
+    width:100%;
+    background-color:black;
+    text-align: center;
+    padding-top: 10px;
+
+}
 .banner{
-    background-color: black;
     color:white;
-    max-width: 100px;
-
-}
-
-.nav{
     display: flex;
-    min-width: 1140px;
+    width: 15%;
 }
 
-ul {
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    /*padding: 10px;*/
     overflow: hidden;
     background-color: black;
-
+    position: relative;
 }
 
-li {
+.navigation li {
     float: right;
 }
-
-li a {
+/*
+.navigation li a {
     display: block;
     color: white;
     text-align: right;
     padding: 14px 16px;
     text-decoration: none;
-}
+}*/
 
 .hero {
     background: url("images/kayak-bkgd.jpg");
@@ -51,12 +117,18 @@ li a {
     background-repeat: no-repeat;
     text-align:center;
     position:relative;
-    min-width:1140px;
-    max-width: 100%;
     max-height:500px;
     min-height: 300px;
-    padding-top:80px;
-    margin: 110px;
+    padding-top:0px;
+    margin:119px;
+    }
+
+div,
+.hero,
+h1, 
+h3 {
+    font-family: Pacifico;
+    width: 100%;
     }
 
 p { 
@@ -65,33 +137,60 @@ p {
 
 button {
     padding: 5px;
-    background-color: red;
+    background-color: #e2574c;
     color: white;
     border: none;
     border-radius:50px;
     box-shadow: 2px 5px 10px black;
 }
 
+article,
 .about, 
 .rentals, 
 .location {
    font-size: 16px;
-   font-style: italic;
+   font-family: Karla-Regular;
    margin:auto;
    /*padding: 66px;*/
    text-align: center;
    width: 1140px;
    background-color:white;
    min-width: 1140px;
+   width: 100%;
 }
 
-.container img{
+.about div img{
     min-width:32%;
     justify-content:space-between;
-    align-content: stretch;
+    /*align-content: stretch;*/
     align-content: center;
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    border-left:50%;
+}
+@media all and(min-width:600px){
+article{
+color: blue;
+}
+
+.about div img{
+display: flex;
+align-content: center;
+text-align: center;
+
+}
+}
+
+@media all and (min-width: 1140px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  article,
+  aside {
+    color: #c247a7;
+  }
 }
 
 .rentals table, 
@@ -102,12 +201,15 @@ button {
     align-content: center;
     text-align: center;
 }
+
 .rentals table{
 float:right;
 padding-bottom: 200px;
 }
+
 .rentals h2{
     text-align: center;
+
 }
 .rentals{
     text-align: left;
@@ -118,12 +220,13 @@ padding-bottom: 200px;
     min-height: 250px;
     align-content: center;
 }
+
 .h2{
     color:#646464;
 }
 
 a:hover{
-    color:blue;
+    color:#e2574c;
 }
 
 a{
@@ -143,9 +246,10 @@ footer{
 
 .social, 
 {
-display: flex;
+    float: right;
+/*display: flex;
 flex-direction:right;
-flex-direction: row;
+flex-direction: row;*/
 /*align-content: right;
 clear:both;*/
 }
