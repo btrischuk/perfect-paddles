@@ -62,7 +62,7 @@ body{
     align-content: center;
     width: 100%;
     /*max-width:1140px;
-    min-widthdsdf: 1140px;
+    min-width: 1140px;
     margin-top: 13px;*/
 }
 
@@ -71,7 +71,7 @@ header{
     top:0px;
     width:100%;
     background-color:black;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .banner{
@@ -84,6 +84,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    justify-content: flex-end;
 }
 
 nav ul li{
@@ -91,14 +92,15 @@ nav ul li{
     list-style-type: none;
     margin: 10px;
     /*padding: 10px;*/
-    overflow: hidden;
+    /*overflow: scroll;*/
     background-color: black;
     position: relative;
 }
 
-.navigation li {
+.navigation, li {
     float: right;
 }
+
 /*
 .navigation li a {
     display: block;
@@ -116,9 +118,10 @@ nav ul li{
     background-repeat: no-repeat;
     text-align:center;
     position:relative;
-    max-height:500px;
-    min-height: 300px;
-    padding-top:0px;
+    /*max-height:500px;
+    min-height: 300px;*/
+    width: 100%;
+    /*padding-top:0px;*/
     margin:119px;
     }
 
@@ -129,10 +132,6 @@ h3 {
     font-family: Pacifico;
     width: 100%;
     }
-
-p { 
-    align-content: center;
-}
 
 button {
     padding: 5px;
