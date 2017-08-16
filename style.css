@@ -101,15 +101,6 @@ nav ul li{
     float: right;
 }
 
-/*
-.navigation li a {
-    display: block;
-    color: white;
-    text-align: right;
-    padding: 14px 16px;
-    text-decoration: none;
-}*/
-
 .hero {
     background: url("images/kayak-bkgd.jpg");
     color:white;
@@ -169,13 +160,13 @@ article,
 }
 @media all and(min-width:600px){
 article{
-color: blue;
+    color: blue;
 }
 
 .about div img{
-display: flex;
-align-content: center;
-text-align: center;
+    display: flex;
+    align-content: center;
+    text-align: center;
 
 }
 }
@@ -201,8 +192,8 @@ text-align: center;
 }
 
 .rentals table{
-float:right;
-padding-bottom: 200px;
+    float:right;
+    padding-bottom: 200px;
 }
 
 .rentals h2{
