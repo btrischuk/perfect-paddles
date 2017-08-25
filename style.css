@@ -1,71 +1,70 @@
 @font-face {
     font-family: 'Karla-Bold';
-    src: url('fonts/Karla-Bold.eot');
-    src: url('fonts/Karla-Bold.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Karla-Bold.woff') format('woff'),
-         url('fonts/Karla-Bold.ttf') format('truetype'),
-         url('fonts/Karla-Bold.svg#robotoregular') format('svg');
+    src: url('fonts/Karla/Karla-Bold.eot');
+    src: url('fonts/Karla/Karla-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Karla/Karla-Bold.woff') format('woff'),
+         url('fonts/Karla/Karla-Bold.ttf') format('truetype'),
+         url('fonts/Karla/Karla-Bold.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Karla-BoldItalic';
-    src: url('fonts/Karla-BoldItalic.eot');
-    src: url('fonts/Karla-BoldItalic.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Karla-BoldItalic.woff') format('woff'),
-         url('fonts/Karla-BoldItalic.ttf') format('truetype'),
-         url('fonts/Karla-BoldItalic.svg#robotoregular') format('svg');
+    src: url('fonts/Karla/Karla-BoldItalic.eot');
+    src: url('fonts/Karla/Karla-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Karla/Karla-BoldItalic.woff') format('woff'),
+         url('fonts/Karla/Karla-BoldItalic.ttf') format('truetype'),
+         url('fonts/Karla/Karla-BoldItalic.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Karla-Italic';
-    src: url('fonts/Karla-Italic.eot');
-    src: url('fonts/Karla-Italic.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Karla-Italic.woff') format('woff'),
-         url('fonts/Karla-Italic.ttf') format('truetype'),
-         url('ont/Karla-Italic.svg#robotoregular') format('svg');
+    src: url('fonts/Karla/Karla-Italic.eot');
+    src: url('fonts/Karla/Karla-Italic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Karla/Karla-Italic.woff') format('woff'),
+         url('fonts/Karla/Karla-Italic.ttf') format('truetype'),
+         url('font/Karla/Karla-Italic.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Karla-Regular';
-    src: url('fonts/Karla-Regular.eot');
-    src: url('fonts/Karla-Regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Karla-Regular.woff') format('woff'),
-         url('fonts/Karla-Regular.ttf') format('truetype'),
-         url('fonts/Karla-Regular.svg#robotoregular') format('svg');
+    src: url('fonts/Karla/Karla-Regular.eot');
+    src: url('fonts/Karla/Karla-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Karla/Karla-Regular.woff') format('woff'),
+         url('fonts/Karla/Karla-Regular.ttf') format('truetype'),
+         url('fonts/Karla/Karla-Regular.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Pacifico';
-    src: url('fonts/Pacifico.eot');
-    src: url('fonts/Pacifico.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Pacifico.woff') format('woff'),
-         url('fonts/Pacifico.ttf') format('truetype'),
-         url('fonts/Pacifico.svg#robotoregular') format('svg');
+    src: url('fonts/Pacifico/Pacifico.eot');
+    src: url('fonts/Pacifico/Pacifico.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Pacifico/Pacifico.woff') format('woff'),
+         url('fonts/Pacifico/Pacifico.ttf') format('truetype'),
+         url('fonts/Pacifico/Pacifico.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-body{
-    background-color:white;
+body {
+    font-family: Karla-Regular;
     font-size: 16px;
     line-height: 1.25em;
-    box-sizing: border-box;
-    color: #2d2d2d;
     width: 100%;
-    /*max-width:1140px;
-    min-width: 1140px;
-    margin-top: 13px;*/
+    box-sizing: border-box;
+    background-color:white;
+    color: #2d2d2d;
+    /*margin-top: 13px;*/
 }
 
-header{
+header {
     display: flex;
     position:fixed;
     top:0px;
@@ -74,7 +73,7 @@ header{
     /*text-align: center;*/
 }
 
-header .navigation li{
+header .navigation li {
     justify-content: flex-end;
 }
 
@@ -85,21 +84,19 @@ nav ul {
     justify-content: flex-end;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style-type: none;
-    margin: 10px;
     background-color: black;
     position: relative;
-    
+    margin: 10px;
 }
 
-.banner{
+.banner {
     color:white;
     display: flex;
-    width: 15%;
+    width: 20em;
 }
-
 
 .hero {
     background-image: linear-gradient(
@@ -117,13 +114,10 @@ nav ul li{
     width: 100%;
     /*padding-top:0px;*/
     margin:119px;
-    height: 400px;
+    /*height: 400px;*/
     }
 
-div,
-.hero,
-h1, 
-h3 {
+div .hero h1 h3 {
     font-family: Pacifico;
     width: 100%;
     }
@@ -137,24 +131,17 @@ button {
     box-shadow: 2px 5px 10px black;
 }
 
-article,
-.about, 
-.rentals, 
-.location {
-   font-size: 16px;
-   font-family: Karla-Regular;
-   margin:auto;
+article, .about, .rentals, .location {
+   margin: auto;
    /*padding: 66px;*/
    text-align: center;
-   width: 1140px;
    background-color:white;
-   min-width: 1140px;
    width: 100%;
 }
 
-.about div img{
-    min-width:32%;
-    justify-content:space-between;
+.about div img {
+    min-width: 32%;
+    justify-content: space-between;
     /*align-content: stretch;*/
     align-content: center;
     display: flex;
@@ -163,22 +150,22 @@ article,
 }
 
 @media all and(min-width:600px){
-article{
+article {
     color: blue;
 }
 
-.about div img{
+.about div img {
     display: flex;
     align-content: center;
     text-align: center;
 }
 
-.social i{
+.social i {
     display: flex;
     justify-content: center;
 }
 
-.social p{
+.social p {
     display: flex;
     float: left;
 }
@@ -189,7 +176,7 @@ img {
     max-width: 960px;
     float: left;
     justify-content: space-between;
-  }
+}
   
 article,
 aside {
@@ -198,63 +185,61 @@ aside {
   }
 }
 
-.rentals table, 
-.rentals th, 
-.rentals td {
+.rentals table, .rentals th, .rentals td {
     border-collapse: collapse;
     border: 1px solid black;
     align-content: center;
     text-align: center;
 }
 
-.rentals table{
+.rentals table {
     float:right;
     padding-bottom: 200px;
 }
 
-.rentals h2{
+.rentals h2 {
     text-align: center;
 }
 
-.rentals{
+.rentals {
     text-align: left;
 }
 
-.map{
-    min-width: 1140px;
-    min-height: 250px;
+.map {
+    min-width: 90%;
     align-content: center;
 }
 
-.h2{
+.h2 {
     color:#646464;
 }
 
-a:hover{
+a:hover {
     color:#e2574c;
 }
 
-a{
+a {
     color:white
 }
 
-section h4{
+section h4 {
     font-size: 20px;
 }
 
-footer{
+footer {
     text-align:center;
     background-color: black;
     color: white;
-    min-width:1140px;
+    min-width:100%;
 }
 
-.social, {
+/*.social {
     float: right;
-/*display: flex;
+display: flex;
 flex-direction:right;
 flex-direction: row;*/
 /*align-content: right;
-clear:both;*/
+clear:both;
 }
 
+    */
