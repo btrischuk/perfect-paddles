@@ -57,11 +57,13 @@ body {
     font-family: Karla-Regular;
     font-size: 16px;
     line-height: 1.25em;
-    width: 100%;
+    min-width: 100%;
     box-sizing: border-box;
     background-color:white;
     color: #2d2d2d;
-    /*margin-top: 13px;*/
+    margin-top: 13px;
+    align-content: center;
+    text-align: center;
 }
 
 header {
@@ -73,9 +75,9 @@ header {
     /*text-align: center;*/
 }
 
-header .navigation li {
+/*header .navigation li {
     justify-content: flex-end;
-}
+}*/
 
 nav ul {
     list-style: none;
@@ -93,7 +95,7 @@ nav ul li {
 }
 
 .banner {
-    color:white;
+    color:green;
     display: flex;
     width: 20em;
 }
@@ -108,19 +110,25 @@ nav ul li {
     background-position: center;
     background-repeat: no-repeat;
     text-align:center;
+    font-family: Pacifico;
     position:relative;
-    /*max-height:500px;
-    min-height: 300px;*/
-    width: 100%;
-    /*padding-top:0px;*/
-    margin:119px;
-    /*height: 400px;*/
-    }
+    min-width: 100%;
+    margin-top:119px;
+}
 
 div .hero h1 h3 {
     font-family: Pacifico;
     width: 100%;
-    }
+    margin: 1em auto;
+}
+
+.h2 {
+    color:#646464;
+}
+
+section h4 {
+    font-size: 20px;
+}
 
 button {
     padding: 5px;
@@ -132,24 +140,24 @@ button {
 }
 
 article, .about, .rentals, .location {
-   margin: auto;
-   /*padding: 66px;*/
-   text-align: center;
+   /*margin: auto;*/
    background-color:white;
    width: 100%;
+   align-content: center;
 }
 
 .about div img {
-    min-width: 32%;
-    justify-content: space-between;
-    /*align-content: stretch;*/
+    min-width:95%;
+    /*justify-content: space-between;*/
     align-content: center;
     display: flex;
     flex-direction: column;
-    /*padding: 10px;*/
+    align-content: center;
+    padding: 5%, 2.5%;
+    
 }
 
-@media all and(min-width:600px){
+@media all and (min-width:600px) {
 article {
     color: blue;
 }
@@ -160,6 +168,23 @@ article {
     text-align: center;
 }
 
+.rentals p {
+    display: flex;
+    float: left;
+    text-align: left;
+    max-width: 50%;
+}
+.rentals h2{
+    text-align: center;
+}
+
+table {
+    float: right;
+    max-width: 50%;
+}
+.social{
+    display: flex;
+}
 .social i {
     display: flex;
     justify-content: center;
@@ -170,7 +195,7 @@ article {
     float: left;
 }
 }
-
+/*
 @media all and (min-width: 1140px) {
 img {
     max-width: 960px;
@@ -182,8 +207,8 @@ article,
 aside {
     clear: both;
 
-  }
 }
+}*/
 
 .rentals table, .rentals th, .rentals td {
     border-collapse: collapse;
@@ -191,27 +216,17 @@ aside {
     align-content: center;
     text-align: center;
 }
+/*.rentals {
 
+}*/
 .rentals table {
-    float:right;
-    padding-bottom: 200px;
+    justify-content: center;
 }
 
-.rentals h2 {
-    text-align: center;
-}
-
-.rentals {
-    text-align: left;
-}
 
 .map {
     min-width: 90%;
     align-content: center;
-}
-
-.h2 {
-    color:#646464;
 }
 
 a:hover {
@@ -220,10 +235,6 @@ a:hover {
 
 a {
     color:white
-}
-
-section h4 {
-    font-size: 20px;
 }
 
 footer {
