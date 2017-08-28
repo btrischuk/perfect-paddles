@@ -61,7 +61,6 @@ body {
     box-sizing: border-box;
     background-color:white;
     color: #2d2d2d;
-    margin-top: 13px;
     align-content: center;
     text-align: center;
 }
@@ -72,7 +71,10 @@ header {
     top:0px;
     width:100%;
     background-color:black;
-    /*text-align: center;*/
+    text-align: center;
+}
+.banner img {
+    width: 40%;
 }
 
 /*header .navigation li {
@@ -82,8 +84,9 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    justify-content: flex-end;
+    justify-content: center;
+    /*align-content: center;*/
+    /*justify-content: flex-end;*/
 }
 
 nav ul li {
@@ -91,13 +94,12 @@ nav ul li {
     list-style-type: none;
     background-color: black;
     position: relative;
-    margin: 10px;
+    overflow: hidden;
+    margin: 0 8%;
 }
 
-.banner {
-    color:green;
-    display: flex;
-    width: 20em;
+.navigataion li {
+    float: right;
 }
 
 .hero {
@@ -112,18 +114,25 @@ nav ul li {
     text-align:center;
     font-family: Pacifico;
     position:relative;
+    top: 80px;
     min-width: 100%;
-    margin-top:119px;
+    min-height: 50%;
+    /*margin-top:119px;*/
+    display: block;
+    margin: 0px auto;
 }
 
 div .hero h1 h3 {
     font-family: Pacifico;
     width: 100%;
     margin: 1em auto;
+    text-shadow: 2px 2px 5px #999;
+
 }
 
-.h2 {
+h2 {
     color:#646464;
+    font-family: pacifico;
 }
 
 section h4 {
@@ -141,6 +150,8 @@ button {
 
 article, .about, .rentals, .location {
    /*margin: auto;*/
+   position: relative;
+   top: 80px;
    background-color:white;
    width: 100%;
    align-content: center;
@@ -150,8 +161,9 @@ article, .about, .rentals, .location {
     min-width:95%;
     /*justify-content: space-between;*/
     align-content: center;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    margin: 5px auto;
+    /*flex-direction: column;*/
     align-content: center;
     padding: 5%, 2.5%;
     
@@ -220,7 +232,13 @@ aside {
 
 }*/
 .rentals table {
-    justify-content: center;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+table th {
+    background:#e6e6e6;
 }
 
 
@@ -230,11 +248,15 @@ aside {
 }
 
 a:hover {
-    color:#e2574c;
+    color:#b64036;
 }
 
 a {
     color:white
+}
+
+.rentals a {
+    color:#b64036;
 }
 
 footer {
