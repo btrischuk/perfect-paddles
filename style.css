@@ -57,12 +57,13 @@ body {
     font-family: Karla-Regular;
     font-size: 16px;
     line-height: 1.25em;
-    min-width: 100%;
+    /*min-width: 100%;*/
     box-sizing: border-box;
     background-color:white;
     color: #2d2d2d;
     align-content: center;
     text-align: center;
+    display: inline-block;
 }
 
 header {
@@ -149,8 +150,8 @@ button {
 }
 
 article, .about, .rentals, .location {
-   /*margin: auto;*/
-   position: relative;
+   margin: auto;
+   /*position: relative;*/
    top: 80px;
    background-color:white;
    width: 100%;
@@ -207,9 +208,12 @@ table {
     float: left;
 }
 }
-/*
+
 @media all and (min-width: 1140px) {
-img {
+    article{
+        color: green;
+    
+/*img {
     max-width: 960px;
     float: left;
     justify-content: space-between;
@@ -217,10 +221,10 @@ img {
   
 article,
 aside {
-    clear: both;
+    clear: both;*/
 
 }
-}*/
+}
 
 .rentals table, .rentals th, .rentals td {
     border-collapse: collapse;
@@ -257,6 +261,10 @@ a {
 
 .rentals a {
     color:#b64036;
+}
+
+.address{
+    color: #646464;
 }
 
 footer {
