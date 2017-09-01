@@ -204,6 +204,10 @@ table {
 .social p {
     display: flex;
 }
+
+.social-links{
+    
+}
 }
 
 @media all and (min-width: 1140px) {
@@ -270,6 +274,19 @@ footer {
     background-color: black;
     color: white;
     min-width:100%;
+}
+
+.social-logos {
+  list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-content: center;
+    margin: 1em auto;
+}
+
+.social-links {
+    display: none;
 }
 
 /*.social {
