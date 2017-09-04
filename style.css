@@ -62,8 +62,6 @@ body {
     text-align: center;
     box-sizing: border-box;
     color: #2d2d2d;
-
-    /*display: inline-block;*/
 }
 
 header {
@@ -129,7 +127,10 @@ h1, h3 {
     width: 100%;
     margin: 1em auto;
     text-shadow: 2px 2px 5px #999;
+}
 
+h1 {
+    font-size: 100px;
 }
 
 h2 {
@@ -137,6 +138,9 @@ h2 {
     font-family: "pacifico", cursive, serif;
 }
 
+h3 {
+    font-size: 50px;
+}
 button {
     padding: 20px;
     font-size: 20px;
