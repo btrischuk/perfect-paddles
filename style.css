@@ -55,24 +55,23 @@
 
 body {
     font-family: "Karla-Regular", cursive, serif;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    color: #2d2d2d;
     min-width: 100%;
     font-size: 16px;
     line-height: 1.25em;
-    align-content: center;
-    text-align: center;
-    box-sizing: border-box;
-    color: #2d2d2d;
 }
 
 header {
-    /*display: flex;*/
     position:fixed;
-    z-index: 1;
-    top:0px;
-    width:100%;
     background-color:black;
     text-align: center;
-    padding-top: 10px;
+    /*padding-top: 10px;*/
+    top:0px;
+    width:100%;
+    z-index: 1;
 }
 
 .banner img {
@@ -87,13 +86,13 @@ nav ul {
 }
 
 .navigation ul li {
-    z-index: 2;
     text-transform: uppercase;
     display: inline-block;
     background-color: black;
     position: relative;
     overflow: visible;
     margin: 0 6%;
+    z-index: 2;
 }
 
 .navigation a {
@@ -110,32 +109,34 @@ nav ul {
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align:center;
-    position:relative;
-    min-width: 100%;
-    min-height: 50%;
+    text-align: center;
+    position: relative;
     margin: 30px auto;
-    padding-top: 20%;
-    padding-bottom: 50px;
+    min-width: 100%;
+    min-height: 40%;
+    padding-top: 30%;
+    padding-bottom: 100px;
     line-height: 3em;
 }
 
 .hero p {
     text-transform: uppercase;
+    margin: 16px;
 }
 
 h1, h3 {
     font-family: "Pacifico", cursive, serif;
-    width: 100%;
-    margin: 1em auto;
+    margin: 1em 0;
     text-shadow: 2px 2px 5px #999;
     word-wrap: break-word;
+    overflow: visible;
+    width: 100%;
 }
 
 h1 {
-    font-size: 4em;
     display: block;
     white-space:nowrap;
+    font-size: 4em;
 }
 
 h2 {
@@ -152,16 +153,19 @@ h4 {
 }
 
 button {
-    padding: 20px;
-    font-size: 20px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
     align-content: center;
+    text-align: center;
     text-transform: uppercase;
     background-color: #e2574c;
     color: white;
     border: none;
-    border-radius:50px;
+    border-radius: 50px;
     box-shadow: 2px 5px 10px black;
+    padding: 10px;
+    font-size: 12px;
 }
 
 #about, #rentals, #location {
@@ -178,14 +182,14 @@ button {
 }*/
 
 .about-images img{
-    min-width:95%;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
     align-content: center;
     display: block;
     margin: 20px auto;
-    /*flex-direction: column;*/
-    align-content: center;
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.36);    
+    min-width: 95%;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.36); 
 }
 
 @media all and (min-width:600px) {
@@ -194,24 +198,50 @@ button {
     height: 56px;
 }
 
-/*button {
-    flex-flow: row wrap;
-}*/
-
 .navigation {
     display: flex;
     margin: 0 3em 0 auto;
 }
 
+/*button {
+    display: flex;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #e2574c;
+    color: white;
+    border: none;
+    overflow: visible;
+    border-radius: 50px;
+    box-shadow: 2px 5px 10px black;
+    padding: 10px;
+    font-size: 12px;
+}*/
+
 #about p {
     color: blue;
 }
 
-.about-images img {
+.about-images {
     display: flex;
-    display: block;
-    align-content: center;
-    max-width: 30%;
+    /*display: block;*/
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto 0 auto;
+    /*max-width: 30%;*/
+}
+
+.about-images img {
+    justify-content: space-between;
+    margin: 0 .5em;
+    display: flex;
+    flex-grow: 1;
+    overflow: visible;
+    display: inline-block;
+    min-width: 30%;
+    /*height: auto;*/
+    flex: 1;
 }
 
 #rentals p {
@@ -221,8 +251,8 @@ button {
 }
 
 table {
-    max-width: 50%;
     display: inline-block;
+    max-width: 50%;
 }
 
 .social {
@@ -237,10 +267,6 @@ table {
 .social p {
     display: flex;
 }
-
-.social-links{
-    
-}
 }
 
 @media all and (min-width: 1140px) {
@@ -249,22 +275,21 @@ table {
 }
 }
     
-img {
-    max-width: 960px;
+/*img {
     justify-content: space-between;
-}
+    max-width: 960px;
+}*/
 
 #rentals table, #rentals th, #rentals td {
-    /*border-collapse: collapse;*/
-    align-content: center;
+    /*align-content: center;*/
     text-align: center;
 }
 
 #rentals table {
-    min-width: 90%;
+    border-collapse: collapse;
     position: relative;
     left: 5%;
-    border-collapse: collapse;
+    min-width: 90%;
     
 }
 table, th, td {
@@ -276,9 +301,9 @@ th {
 }
 
 .map {
+    align-content: center;
     min-height: 200px;
     min-width: 95%;
-    align-content: center;
 }
 
 a {
@@ -310,11 +335,11 @@ footer a {
 }
 
 .social-logos {
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: center;
-    padding: 10px;
     align-content: center;
+    padding: 10px;
 }
 
 .social-logos p {
@@ -336,20 +361,20 @@ clear:both;
 
 
 .screen-reader-text {
-   clip: rect(1px, 1px, 1px, 1px);
-   position: absolute !important;
-   height: 1px;
-   width: 1px;
-   overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
 }
 
 .screen-reader-text:focus {
     clip: auto !important;
     display: block;
     height: auto;
+    width: auto;
     left: 5px;
     top: 5px;
-    width: auto;
     z-index: 100000; 
   }
 /*utility classes*/
