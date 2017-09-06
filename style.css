@@ -136,7 +136,7 @@ h1, h3 {
 h1 {
     display: block;
     white-space:nowrap;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 h2 {
@@ -147,6 +147,7 @@ h2 {
 h3 {
     font-size: 2em;
 }
+
 h4 {
     box-shadow: 0px 0px 13px 17px rgba(0,0,0,0.13);
     display: inline-block;
@@ -181,7 +182,7 @@ button {
    align-content: center;
 }*/
 
-.about-images img{
+.about-images img {
     display: flex;
     justify-content: center;
     flex-flow: wrap;
@@ -190,89 +191,6 @@ button {
     margin: 20px auto;
     min-width: 95%;
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.36); 
-}
-
-@media all and (min-width:600px) {
-.banner, .navigation {
-    display: flex;
-    height: 56px;
-}
-
-.navigation {
-    display: flex;
-    margin: 0 3em 0 auto;
-}
-
-/*button {
-    display: flex;
-    display: inline-block;
-    align-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #e2574c;
-    color: white;
-    border: none;
-    overflow: visible;
-    border-radius: 50px;
-    box-shadow: 2px 5px 10px black;
-    padding: 10px;
-    font-size: 12px;
-}*/
-
-#about p {
-    color: blue;
-}
-
-.about-images {
-    display: flex;
-    /*display: block;*/
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 50px auto 0 auto;
-    /*max-width: 30%;*/
-}
-
-.about-images img {
-    justify-content: space-between;
-    margin: 0 .5em;
-    display: flex;
-    flex-grow: 1;
-    overflow: visible;
-    display: inline-block;
-    min-width: 30%;
-    /*height: auto;*/
-    flex: 1;
-}
-
-#rentals p {
-    display: flex;
-    text-align: left;
-    max-width: 50%;
-}
-
-table {
-    display: inline-block;
-    max-width: 50%;
-}
-
-.social {
-    display: flex;
-}
-
-.social i {
-    display: flex;
-    justify-content: center;
-}
-
-.social p {
-    display: flex;
-}
-}
-
-@media all and (min-width: 1140px) {
-    article{
-        color: green;
-}
 }
     
 /*img {
@@ -290,8 +208,8 @@ table {
     position: relative;
     left: 5%;
     min-width: 90%;
-    
 }
+
 table, th, td {
     border: 1px solid #c8c8c8;
 }
@@ -318,7 +236,7 @@ a:hover {
     color:#b64036;
 }*/
 
-.address{
+.address {
     color: #646464;
 }
 
@@ -347,7 +265,7 @@ footer a {
 }
 
 .social-links {
-    display: none;
+visibility: hidden;
 }
 
 /*.social {
@@ -359,6 +277,92 @@ clear:both;
 }
 */
 
+@media all and (min-width:600px) {
+    .banner, .navigation {
+        display: flex;
+        height: 56px;
+}
+
+    .navigation {
+        display: flex;
+        margin: 0 3em 0 auto;
+}
+
+    /*button {
+        display: flex;
+        display: inline-block;
+        align-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #e2574c;
+        color: white;
+        border: none;
+        overflow: visible;
+        border-radius: 50px;
+        box-shadow: 2px 5px 10px black;
+        padding: 10px;
+        font-size: 12px;
+    }*/
+
+    #about p {
+        color: blue;
+}
+
+    .about-images {
+        display: flex;
+        /*display: block;*/
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 50px auto 0 auto;
+        /*max-width: 30%;*/
+    }
+
+    .about-images img {
+        justify-content: space-between;
+        margin: 0 .5em;
+        display: flex;
+        flex-grow: 1;
+        overflow: visible;
+        display: inline-block;
+        min-width: 30%;
+        /*height: auto;*/
+        flex: 1;
+    }
+
+    #rentals p {
+        display: flex;
+        text-align: left;
+        max-width: 50%;
+    }
+
+    table {
+        display: inline-block;
+        max-width: 50%;
+    }
+
+    .social {
+        display: flex;
+    }
+
+    .social i {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social p {
+        display: flex;
+    }
+
+    .social-links {
+        visibility: visible;
+    }
+}
+
+@media all and (min-width: 1140px) {
+    article{
+        color: green;
+    }
+}
 
 .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
@@ -376,5 +380,5 @@ clear:both;
     left: 5px;
     top: 5px;
     z-index: 100000; 
-  }
+}
 /*utility classes*/
