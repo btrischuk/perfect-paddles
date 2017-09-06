@@ -249,8 +249,7 @@ footer a {
 .social {
     display: flex;
     list-style: none;
-    justify-content: right;
-    align-content: right;
+    justify-content: space-around;
     /*min-width:*/
     /*margin: 0 auto;*/
 }
@@ -261,7 +260,7 @@ footer a {
 }*/
 
 .social span {
-visibility: hidden;
+display: none;
 }
 
 @media all and (min-width:600px) {
@@ -310,8 +309,7 @@ visibility: hidden;
 
     footer {
         display: flex;
-        flex-direction: row;
-        /*align-content: space-between;*/
+        justify-content: space-between;
         /*align-items: center;*/
     }
 
@@ -321,19 +319,13 @@ visibility: hidden;
         display: inline-block;
         text-align: left;
     }
-    .social p {
-        justify-content: right;
-    }
 
     .social span {
         padding: 10px;
-        visibility: visible;
-
     }
 
-    /*.social {
-        visibility: visible;
-        display: inline-block;*/
+    .social span {
+        display: inline-block;
     }
 }
 
