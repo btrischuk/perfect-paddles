@@ -76,6 +76,7 @@ header {
 
 .banner img {
     width: 40%;
+    justify-content: center;
 }
 
 nav ul {
@@ -83,6 +84,7 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
+    padding: 0;
 }
 
 .navigation ul li {
@@ -114,8 +116,8 @@ nav ul {
     margin: 30px auto;
     min-width: 100%;
     min-height: 40%;
-    padding-top: 30%;
-    padding-bottom: 100px;
+    padding-top: 15%;
+    padding-bottom: 80px;
     line-height: 3em;
 }
 
@@ -131,12 +133,13 @@ h1, h3 {
     word-wrap: break-word;
     overflow: visible;
     width: 100%;
+    text-shadow: 2px 2px 13px rgba(0, 0, 0, .9);
 }
 
 h1 {
     display: block;
     white-space:nowrap;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 h2 {
@@ -170,17 +173,8 @@ button {
 }
 
 #about, #rentals, #location {
-    padding-top: 8em;
+    padding-top: 4.5em;
 }
-
-/*article, #about, #rentals, #location {
-   margin: auto;
-   position: relative;
-   padding-top: 100px;
-   background-color:white;
-   width: 100%;
-   align-content: center;
-}*/
 
 .about-images img {
     display: flex;
@@ -245,38 +239,30 @@ footer {
     background-color: black;
     color: white;
     min-width: 100%;
-    padding: 80px 0px;
+    padding: 3.5em 0px;
 }
 
 footer a {
     color: white;
 }
 
-.social-logos {
+.social {
     display: flex;
     list-style: none;
-    justify-content: center;
-    align-content: center;
-    padding: 10px;
-    margin-left: 6em;
+    justify-content: right;
+    align-content: right;
+    /*min-width:*/
+    /*margin: 0 auto;*/
 }
 
-.social-logos p {
+/*.social p {
     margin: .5em;
-}
+    align-content: right;
+}*/
 
-.social-links {
+.social span {
 visibility: hidden;
 }
-
-/*.social {
-display: flex;
-flex-direction:right;
-flex-direction: row;*/
-/*align-content: right;
-clear:both;
-}
-*/
 
 @media all and (min-width:600px) {
     .banner, .navigation {
@@ -289,33 +275,15 @@ clear:both;
         margin: 0 3em 0 auto;
 }
 
-    /*button {
-        display: flex;
-        display: inline-block;
-        align-content: center;
-        text-align: center;
-        text-transform: uppercase;
-        background-color: #e2574c;
-        color: white;
-        border: none;
-        overflow: visible;
-        border-radius: 50px;
-        box-shadow: 2px 5px 10px black;
-        padding: 10px;
-        font-size: 12px;
-    }*/
-
     #about p {
         color: blue;
 }
 
     .about-images {
         display: flex;
-        /*display: block;*/
         justify-content: space-between;
         align-items: flex-start;
         margin: 50px auto 0 auto;
-        /*max-width: 30%;*/
     }
 
     .about-images img {
@@ -326,40 +294,53 @@ clear:both;
         overflow: visible;
         display: inline-block;
         min-width: 30%;
-        /*height: auto;*/
         flex: 1;
     }
 
-    #rentals p {
+    .rentals-text {
         display: flex;
-        text-align: left;
-        max-width: 50%;
+        flex-direction: row;
+        width: 95%;
     }
 
-    table {
-        display: inline-block;
-        max-width: 50%;
+    #rentals div {
+        min-width: 50%;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        /*align-content: space-between;*/
+        /*align-items: center;*/
     }
 
     .social {
         display: flex;
+        flex-direction: column;
+        display: inline-block;
+        text-align: left;
     }
-
-    .social i {
-        display: flex;
-        justify-content: center;
-    }
-
     .social p {
-        display: flex;
+        justify-content: right;
     }
 
-    .social-links {
+    .social span {
+        padding: 10px;
         visibility: visible;
+
+    }
+
+    /*.social {
+        visibility: visible;
+        display: inline-block;*/
     }
 }
 
 @media all and (min-width: 1140px) {
+    body {
+        max-width: 1140px;
+    }
     article{
         color: green;
     }
