@@ -62,21 +62,22 @@ body {
     min-width: 100%;
     font-size: 16px;
     line-height: 1.25em;
+    /*padding: auto 10em;*/
 }
 
 header {
-    position:fixed;
+    position: fixed;
     background-color:black;
     text-align: center;
-    /*padding-top: 10px;*/
-    top:0px;
-    width:100%;
+    top: 0px;
+    width: 100%;
     z-index: 1;
 }
 
 .banner img {
     width: 40%;
     justify-content: center;
+    padding-top: .5em;
 }
 
 nav ul {
@@ -113,13 +114,16 @@ nav ul {
     background-repeat: no-repeat;
     text-align: center;
     position: relative;
-    margin: 30px auto;
+    margin-top: 1em;
     min-width: 100%;
     min-height: 40%;
-    padding-top: 15%;
-    padding-bottom: 80px;
+    padding: 15% 0 5em 0;
     line-height: 3em;
 }
+
+/*.hero-text{
+    margin: auto 5% auto 5%;
+}*/
 
 .hero p {
     text-transform: uppercase;
@@ -128,11 +132,11 @@ nav ul {
 
 h1, h3 {
     font-family: "Pacifico", cursive, serif;
-    margin: 1em 0;
-    text-shadow: 2px 2px 5px #999;
     word-wrap: break-word;
     overflow: visible;
+    text-shadow: 2px 2px 5px #999;
     width: 100%;
+    margin: 1em 0;
     text-shadow: 2px 2px 13px rgba(0, 0, 0, .9);
 }
 
@@ -152,8 +156,8 @@ h3 {
 }
 
 h4 {
-    box-shadow: 0px 0px 13px 17px rgba(0,0,0,0.13);
     display: inline-block;
+    box-shadow: 0px 0px 13px 17px rgba(0,0,0,0.13);
 }
 
 button {
@@ -173,7 +177,7 @@ button {
 }
 
 #about, #rentals, #location {
-    padding-top: 4.5em;
+    padding-top: 5.5em;
 }
 
 .about-images img {
@@ -187,13 +191,7 @@ button {
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.36); 
 }
     
-/*img {
-    justify-content: space-between;
-    max-width: 960px;
-}*/
-
 #rentals table, #rentals th, #rentals td {
-    /*align-content: center;*/
     text-align: center;
 }
 
@@ -226,10 +224,6 @@ a:hover {
     color:#b64036;
 }
 
-/*#rentals a {
-    color:#b64036;
-}*/
-
 .address {
     color: #646464;
 }
@@ -239,7 +233,7 @@ footer {
     background-color: black;
     color: white;
     min-width: 100%;
-    padding: 3.5em 0px;
+    padding: 2em 0px;
 }
 
 footer a {
@@ -250,33 +244,36 @@ footer a {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    /*min-width:*/
-    /*margin: 0 auto;*/
+    padding: 0 10em;
 }
 
-/*.social p {
-    margin: .5em;
-    align-content: right;
-}*/
-
 .social span {
-display: none;
+    display: none;
 }
 
 @media all and (min-width:600px) {
     .banner, .navigation {
         display: flex;
         height: 56px;
-}
+    }
+
+    .banner img {
+        padding: .5rem 0px .5rem 0px;
+        width: 308px;
+    }
 
     .navigation {
         display: flex;
         margin: 0 3em 0 auto;
-}
+    }
+
+    .hero {
+        padding-top: 15%;
+    }
 
     #about p {
-        color: blue;
-}
+        margin: 0px 2em;
+    }
 
     .about-images {
         display: flex;
@@ -287,12 +284,12 @@ display: none;
 
     .about-images img {
         justify-content: space-between;
-        margin: 0 .5em;
         display: flex;
         flex-grow: 1;
         overflow: visible;
         display: inline-block;
         min-width: 30%;
+        margin: 0 .5em;
         flex: 1;
     }
 
@@ -310,7 +307,21 @@ display: none;
     footer {
         display: flex;
         justify-content: space-between;
-        /*align-items: center;*/
+        text-align: left;
+    }
+
+    footer p {
+        justify-content: flex-end;
+    }
+
+    footer .social p {
+        margin: 0px;
+        padding: 0px;
+        width: 130px;
+    }
+
+    .contact {
+        padding-left: 1.5em;
     }
 
     .social {
@@ -318,23 +329,20 @@ display: none;
         flex-direction: column;
         display: inline-block;
         text-align: left;
-    }
-
-    .social span {
-        padding: 10px;
+        padding: 0 20px;
     }
 
     .social span {
         display: inline-block;
+        width: 50%;
+        padding: 5%;
     }
 }
 
 @media all and (min-width: 1140px) {
     body {
         max-width: 1140px;
-    }
-    article{
-        color: green;
+        /*background-color: grey;*/
     }
 }
 
