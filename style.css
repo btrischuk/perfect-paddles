@@ -72,6 +72,7 @@ header {
     top: 0px;
     width: 100%;
     z-index: 1;
+    overflow: initial;
 }
 
 .banner img {
@@ -109,7 +110,7 @@ nav ul {
     rgba(128,128,128,0.3)),
     url("images/kayak-bkgd.jpg");
     color:white;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -117,7 +118,7 @@ nav ul {
     margin-top: 1em;
     min-width: 100%;
     min-height: 40%;
-    padding: 15% 0 5em 0;
+    padding: 10% 0 5em 0;
     line-height: 3em;
 }
 
