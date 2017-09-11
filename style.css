@@ -128,7 +128,6 @@ nav ul {
 
 .hero p {
     text-transform: uppercase;
-    margin: 16px;
     font-size: 18px;
     padding-top: 2em;
 }
@@ -146,7 +145,7 @@ h1, h3 {
 h1 {
     display: block;
     white-space: nowrap;
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 h2 {
@@ -294,12 +293,11 @@ footer a {
     .about-images img {
         justify-content: space-between;
         display: flex;
-        flex-grow: 1;
         overflow: visible;
         display: inline-block;
+        flex-grow: 1;
         min-width: 30%;
         margin: 0 .5em;
-        flex: 1;
     }
 
     .rentals-text {
@@ -355,6 +353,8 @@ footer a {
     }
 }
 
+/*utility classes*/
+
 .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
@@ -372,4 +372,3 @@ footer a {
     top: 5px;
     z-index: 100000; 
 }
-/*utility classes*/
