@@ -62,7 +62,6 @@ body {
     min-width: 100%;
     font-size: 16px;
     line-height: 1.25em;
-    /*padding: auto 10em;*/
 }
 
 header {
@@ -115,6 +114,7 @@ nav ul {
     background-repeat: no-repeat;
     text-align: center;
     position: relative;
+    display: inline-block;
     margin-top: 1em;
     min-width: 100%;
     min-height: 40%;
@@ -122,14 +122,10 @@ nav ul {
     line-height: 3em;
 }
 
-/*.hero-text{
-    margin: auto 5% auto 5%;
-}*/
-
 .hero p {
     text-transform: uppercase;
     font-size: 18px;
-    padding-top: 2em;
+    padding-top: 3em;
 }
 
 h1, h3 {
@@ -144,7 +140,8 @@ h1, h3 {
 
 h1 {
     display: block;
-    white-space: nowrap;
+    word-wrap: break-word;
+    line-height: 2em;
     font-size: 3em;
 }
 
